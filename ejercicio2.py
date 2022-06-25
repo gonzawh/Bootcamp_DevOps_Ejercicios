@@ -1,3 +1,5 @@
+import os
+from datetime import datetime
 '''
 Según lo que comprendo del enunciado, 
 el usuario sería el que maneja la caja del restaurante,
@@ -11,9 +13,7 @@ Para este ejercicio voy a armar una especie de menu para darle un poco
 mas de complejidad
 '''
 
-import os
-from datetime import datetime
-
+#Metodo para limpiar pantalla según el sistema operativo del usuario
 def limpioPantalla():
     #windows
     if os.name == 'ce' or os.name == 'nt' or os.name == 'dos':
@@ -77,6 +77,7 @@ impuesto = ''
 cantPersonas = ''
 propina = ''
 
+#ciclo para siempre hasta que se ingrese 0.
 while True:
     menuPrincipal()
     opcion = input('Ingrese opción: ')
