@@ -1,4 +1,3 @@
-#Menu
 import os #importo lib para acceder a las funciones del OS
 import re #importo para manejar expresiones regulares
 
